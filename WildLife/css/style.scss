@@ -1,0 +1,132 @@
+@mixin width-height($width,$height) {
+    width: $width;
+    height: $height;
+}
+$colorOrange :orange;
+
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+}
+header{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between ;
+    margin-top: 5px;
+    min-height: 12vh;
+    .logo{
+        h2{
+            font-size: 30px;
+            font-weight: bold;
+            color: $colorOrange;            
+        }
+        h4{
+            font-size: 15px;
+            font-weight: 500;
+            color: gray;
+        }
+    }
+    nav{
+        .logo__nav{
+            display: flex;
+            li{
+                margin: 5px;
+                a{
+                    font-size: 13px;
+                    font-weight: bold;
+                    color: gray;
+                
+                }
+            }
+        }
+    }
+}
+.main-section{
+    .container{
+        width: 100%;
+        margin: auto;
+        padding: 50px;
+        display: flex;
+        .container__text{
+            flex: 1;
+            justify-content: flex-start;
+            margin-right: 50px;
+            h4{
+                font-size: 45px;
+                font-weight: bold;
+                color: gray;
+            }
+            h1{
+                font-size: 60px;
+                font-weight: bold;
+                color: #27ae60;
+                margin-top: 10px;
+                margin-bottom: 30px;
+            }
+            p{
+                font-size: 18px;
+                color: gray;
+            }
+            button{
+                margin: 30px 0;
+                @include width-height(200px,40px );
+                background: $colorOrange;
+                color: white;
+                outline-style: none;
+                cursor: pointer;
+                border-radius: 5px;
+            }
+        }
+        .cover{
+            flex: 2;
+            justify-content:flex-end;
+            img{
+                @include width-height(600px,auto )
+            }
+        }
+    }
+}
+.footer-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .cover{
+        margin: 30px;
+        img{
+            @include width-height(300px, 200px )
+        }     
+    }
+    .footer__text{
+        h4{
+            font-size: 40px;
+            font-weight: bold;
+            color: $colorOrange;
+        }
+        p{
+            font-weight: bold;
+            color: gray;
+        }
+    }
+}
+
+@media screen and (max-width:768px){
+    .main-section{
+        .container{
+           display: block;
+           text-align: center;
+           .cover{
+            img{
+                @include width-height(450px, 300px );
+            }
+        }
+        }
+        
+    }
+}

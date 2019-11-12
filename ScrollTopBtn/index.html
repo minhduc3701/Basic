@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Scroll top button</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section></section>
+    <p>
+      a[data-info~="external"] { color: red; } a[data-info~="image"] { border:
+      1px solid black; } Dưới đây là một cái đặc biệt mà sẽ gây ấn tượng với bạn
+      bè của bạn. Không quá nhiều người biết về thủ thuật này. Biểu tượng ~ cho
+      phép chúng ta nhắm chọn một thuộc tính trong đó có một danh sách các giá
+      trị được phân chia bởi khoảng trắng. Cùng với thuộc tính tùy chỉnh của
+      chúng ta từ phần số 15, ở trên, chúng ta có thể tạo ra một thuộc tính
+      data-info, có thể nhận một danh sách phân chia bởi khoảng trắng của bất cứ
+      điều gì chúng ta cần phải lưu ý đến. Trong trường hợp này, chúng ta sẽ để
+      ý đến các liên kết bên ngoài và các liên kết đến hình ảnh - ví dụ như vậy.
+      Click Me, Fool Với mã đánh dấu đã có, bây giờ chúng ta có thể nhắm chọn
+      bất kỳ thẻ nào có một trong những giá trị đó, bằng cách sử dụng bộ chọn
+      thuộc tính ~. /* Target data-info attr that contains the value "external"
+      */ a[data-info~="external"] { color: red; } /* And which contain the value
+      "image" */ a[data-info~="image"] { border: 1px solid black; } Khá tiện
+      lợi, phải không?
+    </p>
+    <br /><br /><br /><br />
+    <p>
+      a[data-info~="external"] { color: red; } a[data-info~="image"] { border:
+      1px solid black; } Dưới đây là một cái đặc biệt mà sẽ gây ấn tượng với bạn
+      bè của bạn. Không quá nhiều người biết về thủ thuật này. Biểu tượng ~ cho
+      phép chúng ta nhắm chọn một thuộc tính trong đó có một danh sách các giá
+      trị được phân chia bởi khoảng trắng. Cùng với thuộc tính tùy chỉnh của
+      chúng ta từ phần số 15, ở trên, chúng ta có thể tạo ra một thuộc tính
+      data-info, có thể nhận một danh sách phân chia bởi khoảng trắng của bất cứ
+      điều gì chúng ta cần phải lưu ý đến. Trong trường hợp này, chúng ta sẽ để
+      ý đến các liên kết bên ngoài và các liên kết đến hình ảnh - ví dụ như vậy.
+      Click Me, Fool Với mã đánh dấu đã có, bây giờ chúng ta có thể nhắm chọn
+      bất kỳ thẻ nào có một trong những giá trị đó, bằng cách sử dụng bộ chọn
+      thuộc tính ~. /* Target data-info attr that contains the value "external"
+      */ a[data-info~="external"] { color: red; } /* And which contain the value
+      "image" */ a[data-info~="image"] { border: 1px solid black; } Khá tiện
+      lợi, phải không?
+    </p>
+    <a id="bottomBtn" href="#"><i class="fas fa-arrow-up"></i></a>
+    <script src="app.js"></script>
+  </body>
+</html>

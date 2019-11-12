@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Carousel</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="carousel">
+      <button class="carousel__button carousel__button--left is-hidden">
+        <i class="fas fa-arrow-left"></i>
+      </button>
+      <div class="carousel__track-container">
+        <ul class="carousel__track">
+          <li class="carousel__slide  current-slide">
+            <img
+              class="carousel__image"
+              src="./pexels-photo-2170233.jpeg"
+              alt=""
+            />
+          </li>
+          <li class="carousel__slide">
+            <img
+              class="carousel__image"
+              src="./pexels-photo-2356071.jpeg"
+              alt=""
+            />
+          </li>
+          <li class="carousel__slide">
+            <img
+              class="carousel__image"
+              src="./pexels-photo-547115.jpeg"
+              alt=""
+            />
+          </li>
+          <li class="carousel__slide">
+            <img
+              class="carousel__image"
+              src="./pexels-photo-589821.jpeg"
+              alt=""
+            />
+          </li>
+        </ul>
+      </div>
+
+      <button class="carousel__button carousel__button--right">
+        <i class="fas fa-arrow-right"></i>
+      </button>
+
+      <div class="carousel__nav">
+        <div class="carousel__item current-slide"></div>
+        <div class="carousel__item"></div>
+        <div class="carousel__item"></div>
+        <div class="carousel__item"></div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+.accordion {
+  background-color: rgb(110, 0, 0);
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+  width: 100%;
+  height: 5rem;
+  transition: 0.4s;
+  outline: none;
+  border: 1px solid firebrick;
+}
+.panel {
+  padding: 0 18px;
+  background-color: #fff;
+  display: none;
+  overflow: hidden;
+}
+.accordion:hover {
+  background-color: rgb(170, 58, 58);
+}
+.accordion::after {
+  content: "\02795";
+  font-size: 15px;
+  float: right;
+}
+.active::after {
+  content: "\02796";
+}

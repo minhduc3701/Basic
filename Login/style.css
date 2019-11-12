@@ -1,0 +1,74 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline-style: none;
+}
+
+body {
+  background-image: url("./pexels-photo-2784760.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: auto;
+  height: 600px;
+  position: relative;
+}
+
+.container {
+  width: 300px;
+  height: 400px;
+  background-color: transparent;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.container h3 {
+  font-size: 40px;
+  margin: 50px 30px;
+  text-align: left;
+  border-bottom: 5px solid #b4b4b4;
+  width: 100px;
+  color: white;
+}
+
+.container .login__user, .container .login__password {
+  margin: 20px 30px;
+}
+
+.container .login__user img, .container .login__password img {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
+
+.container .login__user .login__input, .container .login__password .login__input {
+  border: none;
+  background: transparent;
+  margin-bottom: 5px;
+  font-size: 15px;
+  color: white;
+  font-weight: bold;
+  overflow: hidden;
+  text-align: center;
+}
+
+.container .login__user hr, .container .login__password hr {
+  height: 3px;
+  background: #b4b4b4;
+}
+
+.container button {
+  width: 240px;
+  height: 30px;
+  margin: 30px;
+  border: 3px solid #b4b4b4;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */

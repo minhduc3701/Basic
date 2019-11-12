@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Modal</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+    />
+  </head>
+  <body>
+    <div class="modal">
+      <img src="./69867443_2569001996497117_4405264963854139392_n.jpg" alt="" />
+      <div class="content">
+        <h1>Awesome Modal</h1>
+        <p>
+          Giá bay nhanh 1tr8 đã bao gồm ship có fix nhẹ cho các bạn nhiệt tình
+          😊 Khuyến khích mọi ng đến xem và gọi trước khi đến ạ Liên hệ:
+          0974.078.260
+        </p>
+        <a href="#">Read More</a>
+      </div>
+      <div onclick="hidemodal()" class="hide fas fa-times"></div>
+    </div>
+    <a onclick="showmodal()" href="#" class="btn">Show Modal</a>
+    <script>
+      var modal = document.getElementsByClassName("modal")[0];
+      function showmodal() {
+        modal.style.bottom = "20px";
+      }
+      function hidemodal() {
+        modal.style.bottom = "-300px";
+      }
+    </script>
+  </body>
+</html>
